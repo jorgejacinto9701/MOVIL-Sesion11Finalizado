@@ -49,7 +49,7 @@ public class EditorialRegistraActivity extends NewAppCompatActivity {
                 if (!nom.matches(ValidacionUtil.TEXTO)){
                     mensajeAlert("El nombre es de 2 a 20 caracteres");
                 }else if (!dir.matches(ValidacionUtil.DIRECCION)){
-                    mensajeAlert("La dirección es de 3 a 20 caracteres");
+                    mensajeAlert("La dirección es de 3 a 30 caracteres");
                 }else if (spnPais.getSelectedItemPosition() == 0){
                     mensajeAlert("Selecciona un pais");
                 }else if (!fec.matches(ValidacionUtil.FECHA)){
