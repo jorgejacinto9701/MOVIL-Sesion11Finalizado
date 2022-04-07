@@ -51,7 +51,7 @@ public class EditorialRegistraActivity extends NewAppCompatActivity {
                 }else if (!dir.matches(ValidacionUtil.DIRECCION)){
                     mensajeAlert("La dirección es de 3 a 30 caracteres");
                 }else if (spnPais.getSelectedItemPosition() == 0){
-                    mensajeAlert("Selecciona un pais");
+                    mensajeAlert("Selecciona un país");
                 }else if (!fec.matches(ValidacionUtil.FECHA)){
                     mensajeAlert("La fecha tiene formato yyyy-MM-dd");
                 }else{
@@ -79,7 +79,7 @@ public class EditorialRegistraActivity extends NewAppCompatActivity {
             public void onResponse(Call<Editorial> call, Response<Editorial> response) {
                 if (response.isSuccessful()){
                     Editorial obj = response.body();
-                    mensajeAlert("Se registró la Editorial : " + obj.getIdEditorial());
+                    mensajeAlert("Se registró la Editorial : " + obj.getIdEditorial() + " => "+ obj.getFechaCreacion());
                 }else{
                     mensajeAlert("Error de acceso al servicio");
                 }
