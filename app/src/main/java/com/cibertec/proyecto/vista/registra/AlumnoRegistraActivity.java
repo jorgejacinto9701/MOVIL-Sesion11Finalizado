@@ -1,5 +1,6 @@
 package com.cibertec.proyecto.vista.registra;
 
+
 import android.os.Bundle;
 
 import com.cibertec.proyecto.R;
@@ -13,7 +14,6 @@ public class AlumnoRegistraActivity extends NewAppCompatActivity {
 
         setContentView(R.layout.activity_alumno_registra);
     }
-
 
 
 

@@ -57,12 +57,12 @@
         <item>Lenguaje</item>
     </string-array>
 
-    <string-array name="txtNacionalidad">
+    <string-array name="txtPais">
         <item>[Seleccione]</item>
-        <item> Peruano </item>
-        <item> Chileno </item>
-        <item> Colombiano </item>
-        <item> Argentino </item>
+        <item>Ecuador</item>
+        <item>Colombia</item>
+        <item>Alemania</item>
+        <item>Francia</item>
     </string-array>
 
     <string name="txtCargo">Cargo</string>

@@ -1,8 +1,11 @@
 package com.cibertec.proyecto.util;
 
+import android.app.AlertDialog;
+import android.content.Context;
 import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -173,4 +176,23 @@ public class NewAppCompatActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void mensajeAlert(String msg){
+        AlertDialog.Builder alertDialog = new AlertDialog.Builder(this);
+        alertDialog.setMessage(msg);
+        alertDialog.setCancelable(true);
+        alertDialog.show();
+    }
+
+    public void mensajeToastLong(String msg){
+        Toast toast1 =  Toast.makeText(this,msg, Toast.LENGTH_LONG);
+        toast1.show();
+    }
+    public void mensajeToastShort(String msg){
+        Toast toast1 =  Toast.makeText(this,msg, Toast.LENGTH_SHORT);
+        toast1.show();
+    }
+
+
+
 }
