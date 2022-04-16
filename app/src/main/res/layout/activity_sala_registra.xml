@@ -17,6 +17,15 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/idTxtRegSalaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:inputType="textPersonName"
+        android:text="Name" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
