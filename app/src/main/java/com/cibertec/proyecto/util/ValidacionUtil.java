@@ -22,9 +22,9 @@ public class ValidacionUtil {
     public static final String EDAD = "\\d{2}";
     public static final String SEXO = "[FM]";
 
-    public static final String NUMERO = "[a-zA-ZáéíóúñüÁÉÍÓÚÑÜ\\s]{3,10}";
-    public static final String PISO = "\\d{2}";
-    public static final String CAPACIDAD = "\\d{4}";
-    public static final String RECURSOS = "[a-zA-ZáéíóúñüÁÉÍÓÚÑÜ\\s]{3,30}";
+    public static final String NUMERO = "[A-Z]{1}\\d{4}";;
+    public static final String PISO = "\\d{1,2}";
+    public static final String CAPACIDAD = "\\d{1,4}";
+    public static final String RECURSOS = "[a-zA-ZáéíóúñüÁÉÍÓÚÑÜ\\s0-9]{3,40}";
 
 }

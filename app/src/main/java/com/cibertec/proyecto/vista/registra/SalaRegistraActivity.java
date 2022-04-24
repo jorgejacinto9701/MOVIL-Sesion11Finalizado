@@ -50,13 +50,13 @@ public class SalaRegistraActivity extends NewAppCompatActivity {
                 String fec = txtFechaSeparacion.getText().toString();
 
                 if (!num.matches(ValidacionUtil.NUMERO)){
-                    mensajeAlert("El numero es 3 a 10 caracteres");
+                    mensajeAlert("Formato de campo Numero es A0000, 5 caracteres max.");
                 }else if (!pis.matches(ValidacionUtil.PISO)){
-                    mensajeAlert("El piso es de 2 caracteres");
+                    mensajeAlert("Pisos es Numerico, 2 caracteres max.");
                 }else if (!cap.matches(ValidacionUtil.CAPACIDAD)){
-                    mensajeAlert("La capacidad es de 4 caracteres");
+                    mensajeAlert("Capacidad es Numerico, 4 caracteres max.");
                 }else if (!rec.matches(ValidacionUtil.RECURSOS)){
-                    mensajeAlert("El numero es 3 a 30 caracteres");
+                    mensajeAlert("El recurso es de 3 a 40 caracteres max.");
                 }else if (!fec.matches(ValidacionUtil.FECHA)){
                     mensajeAlert("La fecha es yyyy-MM-dd");
                 }else{
