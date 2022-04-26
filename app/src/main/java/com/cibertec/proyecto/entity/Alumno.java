@@ -12,6 +12,21 @@ public class Alumno {
     private String fechaRegistro;
     private int estado;
 
+    public Alumno(){
+
+    }
+    public Alumno(int idAlumno, String nombres, String apellidos, int dni, String direccion, String correo, String fechaNacimiento, String fechaRegistro, int estado) {
+        this.idAlumno = idAlumno;
+        this.nombres = nombres;
+        this.apellidos = apellidos;
+        this.dni = dni;
+        this.direccion = direccion;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.fechaRegistro = fechaRegistro;
+        this.estado = estado;
+    }
+
     public int getIdAlumno() {
         return idAlumno;
     }
