@@ -20,7 +20,102 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        />
 
+    <EditText
+        android:id="@+id/txtTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/lblYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Año"
+        />
+
+    <Spinner
+        android:id="@+id/spnYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/txtAnio"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:id="@+id/lblCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Categoría"
+        />
+
+    <Spinner
+        android:id="@+id/spnCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/txtCategoria"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="25dp" />
+
+    <TextView
+        android:id="@+id/lblSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Serie"
+        />
+
+    <EditText
+        android:id="@+id/txtSerie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/lblType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        />
+
+    <EditText
+        android:id="@+id/txtType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:id="@+id/lblCreationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Creaciòn"
+        />
+
+    <EditText
+        android:id="@+id/txtCreationDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        android:layout_marginBottom="25dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Libro" />
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
