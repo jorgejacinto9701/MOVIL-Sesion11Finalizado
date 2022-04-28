@@ -20,7 +20,7 @@ import retrofit2.Response;
 
 public class AlumnoRegistraActivity extends NewAppCompatActivity {
 
-    EditText txtidAlumno,txtNombres,txtApellidos,txtDni,txtDireccion,txtCorreo,txtFechaNacimiento,txtFechaRegistro,txtEstado;
+    EditText txtNombres,txtApellidos,txtDni,txtDireccion,txtCorreo,txtFechaNacimiento;
     Button btnRegistrar;
     ServiceAlumno rest;
 
@@ -32,46 +32,41 @@ public class AlumnoRegistraActivity extends NewAppCompatActivity {
 
         rest =ConnectionRest.getConnection().create(ServiceAlumno.class);
 
-        txtidAlumno=findViewById(R.id.txtidAlumno);
+
         txtNombres=findViewById(R.id.txtNombres);
         txtApellidos=findViewById(R.id.txtApellidos);
         txtDni=findViewById(R.id.txtDni);
         txtDireccion=findViewById(R.id.txtDireccion);
         txtCorreo=findViewById(R.id.txtCorreo);
         txtFechaNacimiento=findViewById(R.id.txtFechaNacimiento);
-        txtFechaRegistro=findViewById(R.id.txtFechaRegistro);
-        txtEstado=findViewById(R.id.txtEstado);
         btnRegistrar=findViewById(R.id.btnRegistrar);
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               int id=Integer.parseInt(txtidAlumno.getText().toString());
+
                 String nom=txtNombres.getText().toString();
                 String ape=txtApellidos.getText().toString();
                 int dni=Integer.parseInt(txtDni.getText().toString());
                 String dir=txtDireccion.getText().toString();
                 String corr=txtCorreo.getText().toString();
                 String FecNac=txtFechaNacimiento.getText().toString();
-                String FecReg=txtFechaRegistro.getText().toString();
-                int estado=Integer.parseInt(txtEstado.getText().toString());
 
 
 
-                if (!nom.matches(ValidacionUtil.TEXTO)){
-                    mensajeAlert("El nombre es de 2 a 20 caracteres");
-                }else if (!ape.matches(ValidacionUtil.TEXTO)){
-                    mensajeAlert("El apellido es de 2 a 20 caracteres");
+
+                if (!nom.matches(ValidacionUtil.NOMBRE)){
+                    mensajeAlert("El nombre es de 3 a 30 caracteres");
+                }else if (!ape.matches(ValidacionUtil.NOMBRE)){
+                    mensajeAlert("El apellido es de 3 a 30 caracteres");
                 }else if (!dir.matches(ValidacionUtil.DIRECCION)){
                     mensajeAlert("La direccion tiene el siguiente formato");
-                }else if (!corr.matches(ValidacionUtil.CORREO_GMAIL)){
+                }else if (!corr.matches(ValidacionUtil.CORREO)){
                     mensajeAlert("El correo tiene el siguiente formato");
                 }else if (!FecNac.matches(ValidacionUtil.FECHA)){
                     mensajeAlert("La fecha tiene formato yyyy-MM-dd");
-                }else if (!FecReg.matches(ValidacionUtil.FECHA)){
-                    mensajeAlert("La fecha tiene formato yyyy-MM-dd");
                 }else{
                     Alumno obj = new Alumno();
-                    obj.setIdAlumno(id);
+
                     obj.setNombres(nom);
                     obj.setApellidos(ape);
                     obj.setDni(dni);
@@ -79,7 +74,7 @@ public class AlumnoRegistraActivity extends NewAppCompatActivity {
                     obj.setCorreo(corr);
                     obj.setFechaNacimiento(txtFechaNacimiento.getText().toString());
                     obj.setFechaRegistro(FunctionUtil.getFechaActualStringDateTime());
-                    obj.setEstado(FunctionUtil.ESTADO_ACTIVO);
+                    obj.setEstado(1);
                     registraAlumno(obj);
 
                 }

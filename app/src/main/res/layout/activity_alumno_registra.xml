@@ -29,23 +29,6 @@
             android:orientation="vertical" >
 
             <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="idAlumno"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <EditText
-                android:id="@+id/txtidAlumno"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <TextView
                 android:id="@+id/textView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -144,40 +127,6 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="date"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <TextView
-                android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fecha de Registro"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <EditText
-                android:id="@+id/txtFechaRegistro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="date"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <TextView
-                android:id="@+id/textView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Estado"
-                android:layout_margin="3dp"
-                android:padding="3dp"/>
-
-            <EditText
-                android:id="@+id/txtEstado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="number"
                 android:layout_margin="3dp"
                 android:padding="3dp"/>
 

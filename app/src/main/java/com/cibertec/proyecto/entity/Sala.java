@@ -1,14 +1,15 @@
 package com.cibertec.proyecto.entity;
 
 public class Sala {
-            private int idSala;
-            private String numero;
-            private int piso;
-            private int capacidad;
-            private String recursos;
-            private String fechaSeparacion;
-            private String fechaRegistro;
-            private int estado;
+
+    private int idSala;
+    private String numero;
+    private int piso;
+    private int capacidad;
+    private String recursos;
+    private String fechaSeparacion;
+    private String fechaRegistro;
+    private int estado;
 
     public int getIdSala() {
         return idSala;
