@@ -3,6 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_alumno_crud_formulario.xml" value="0.25416666666666665" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_alumno_crud_lista.xml" value="0.25416666666666665" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_alumno_registra.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_autor_consulta.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_autor_crud_formulario.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_autor_crud_item.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_autor_crud_lista.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_autor_registra.xml" value="0.22826086956521738" />
+        <entry key="..\:/5 ciclo Cibertec/Desarrollo de Aplicaciones Moviles/movil_2022_1_grupo_01_sabado/app/src/main/res/layout/activity_sala_registra.xml" value="0.22826086956521738" />
         <entry key="..\:/_WS_MOVIL_Proyecto_Android/movil_modelo_proyecto/app/src/main/res/layout/activity_alumno.xml" value="0.36666666666666664" />
         <entry key="..\:/_WS_MOVIL_Proyecto_Android/movil_modelo_proyecto/app/src/main/res/layout/activity_alumno_consulta.xml" value="0.35104166666666664" />
         <entry key="..\:/_WS_MOVIL_Proyecto_Android/movil_modelo_proyecto/app/src/main/res/layout/activity_alumno_crud_formulario.xml" value="0.36666666666666664" />
