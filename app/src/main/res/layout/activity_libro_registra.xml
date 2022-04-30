@@ -8,6 +8,15 @@
     android:orientation="vertical"
     android:padding="10dp">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
 
     <TextView
         android:id="@+id/idTitlePage"
@@ -116,6 +125,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Registrar Libro" />
-
+    </LinearLayout>
+    </ScrollView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

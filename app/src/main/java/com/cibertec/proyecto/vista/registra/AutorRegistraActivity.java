@@ -22,7 +22,7 @@ public class AutorRegistraActivity extends NewAppCompatActivity {
 
     EditText txtidAutor,txtNombres,
     txtApellidos,txtDni,txtDireccion,txtNacionalidad,
-            txtGrado,txtFechanacimiento,txtFecharegistro,txtEstado;
+            txtGrado,txtFechanacimiento;
     ServiceAutor rest;
     Button btnRegistro;
 
@@ -33,17 +33,14 @@ public class AutorRegistraActivity extends NewAppCompatActivity {
 
         setContentView(R.layout.activity_autor_registra);
 
-        txtidAutor = findViewById(R.id.txtidAutor);
-        txtNombres = findViewById(R.id.txtNombres);
-        txtDni = findViewById(R.id.txtDni);
-        txtApellidos = findViewById(R.id.txtApellidos);
-        txtDireccion = findViewById(R.id.txtDireccion);
-        txtNacionalidad = findViewById(R.id.txtNacionalidad);
-        txtGrado = findViewById(R.id.txtGrado);
-        txtFechanacimiento = findViewById(R.id.txtFechaNacimiento);
-        txtFecharegistro = findViewById(R.id.txtFechaRegistro);
-        txtEstado = findViewById(R.id.txtEstado);
-        btnRegistro=findViewById(R.id.btnRegistro);
+        txtNombres = findViewById(R.id.txtRegAutNombres);
+        txtDni = findViewById(R.id.txtRegAutDni);
+        txtApellidos = findViewById(R.id.txtRegAutApellidos);
+        txtDireccion = findViewById(R.id.txtRegAutDireccion);
+        txtNacionalidad = findViewById(R.id.txtRegAutNacionalidad);
+        txtGrado = findViewById(R.id.txtRegAutGrados);
+        txtFechanacimiento = findViewById(R.id.txtRegAutFechaNacimiento);
+        btnRegistro=findViewById(R.id.btnRegAutRegistro);
 
 
        rest = ConnectionRest.getConnection().create(ServiceAutor.class);
@@ -52,16 +49,13 @@ public class AutorRegistraActivity extends NewAppCompatActivity {
            @Override
            public void onClick(View view) {
 
-               int id=Integer.parseInt(txtidAutor.getText().toString());
                String nomb=txtNombres.getText().toString();
                String ape=txtApellidos.getText().toString();
                String dir=txtDireccion.getText().toString();
                String nac=txtNacionalidad.getText().toString();
                String gra=txtGrado.getText().toString();
                String FecNac=txtFechanacimiento.getText().toString();
-               String FecReg=txtFecharegistro.getText().toString();
-               int dni=Integer.parseInt(txtDni.getText().toString());
-               int est=Integer.parseInt(txtEstado.getText().toString());
+               String dni=txtDni.getText().toString();
 
                if(!nomb.matches(ValidacionUtil.TEXTO)){
                    mensajeAlert("El nombre es de 3 a 10 caracteres");
@@ -69,26 +63,26 @@ public class AutorRegistraActivity extends NewAppCompatActivity {
                    mensajeAlert("El apellido es de 4 a 20 caracteres");
                }else if(!dir.matches(ValidacionUtil.DIRECCION)){
                    mensajeAlert("La direccion consiste en el siguiente formato");
+               }else if(!dni.matches(ValidacionUtil.DNI)){
+                   mensajeAlert("El DNI no tiene 8 dígitos");
                }else if(!nac.matches(ValidacionUtil.TEXTO)){
                    mensajeAlert("Ingrese nacionalidad");
-               }else if (FecNac.matches(ValidacionUtil.FECHA)) {
-                   mensajeAlert("El orden de la fecha es yy-mm-dd");
-               }else if (FecReg.matches(ValidacionUtil.FECHA)) {
+               }else if (!FecNac.matches(ValidacionUtil.FECHA)) {
                    mensajeAlert("El orden de la fecha es yy-mm-dd");
                } else
                {
                    {
-                       Autor A = new Autor();
-                       A.setIdAutor(id);
-                       A.setNombres(nomb);
-                       A.setApellidos(ape);
-                       A.setDni(dni);
-                       A.setDireccion(dir);
-                       A.setNacionalidad(nac);
-                       A.setFechaNacimiento(txtFechanacimiento.getText().toString());
-                       A.setFechaRegistro(FunctionUtil.getFechaActualStringDateTime());
-                       A.setEstado(FunctionUtil.ESTADO_ACTIVO);
-                       registrarAutor(A);
+                       Autor obj = new Autor();
+                       obj.setNombres(nomb);
+                       obj.setApellidos(ape);
+                       obj.setDni(dni);
+                       obj.setDireccion(dir);
+                       obj.setGrado(gra);
+                       obj.setNacionalidad(nac);
+                       obj.setFechaNacimiento(txtFechanacimiento.getText().toString());
+                       obj.setFechaRegistro(FunctionUtil.getFechaActualStringDateTime());
+                       obj.setEstado(FunctionUtil.ESTADO_ACTIVO);
+                       registrarAutor(obj);
                    }
                }
 

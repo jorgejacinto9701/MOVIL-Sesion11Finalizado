@@ -27,22 +27,6 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Id Autor"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
-
-            <EditText
-                android:id="@+id/txtidAutor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_margin="4dp"
-                android:padding="5dp" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -57,7 +41,7 @@
                     android:text="Nombres" />
 
                 <EditText
-                    android:id="@+id/txtNombres"
+                    android:id="@+id/txtRegAutNombres"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -80,7 +64,7 @@
                     android:text="Apellidos" />
 
                 <EditText
-                    android:id="@+id/txtApellidos"
+                    android:id="@+id/txtRegAutApellidos"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="4dp"
@@ -98,7 +82,7 @@
                 android:layout_margin="4dp"/>
 
             <EditText
-                android:id="@+id/txtDni"
+                android:id="@+id/txtRegAutDni"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -115,7 +99,7 @@
                 android:layout_margin="4dp"/>
 
             <EditText
-                android:id="@+id/editTextTextPersonName6"
+                android:id="@+id/txtRegAutDireccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -133,7 +117,7 @@
                 android:layout_margin="4dp"/>
 
             <EditText
-                android:id="@+id/txtNacionalidad"
+                android:id="@+id/txtRegAutNacionalidad"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -151,7 +135,7 @@
                 android:layout_margin="4dp"/>
 
             <EditText
-                android:id="@+id/txtGrado"
+                android:id="@+id/txtRegAutGrados"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -168,7 +152,7 @@
                 android:layout_margin="4dp"/>
 
             <EditText
-                android:id="@+id/txtFechanacimiento"
+                android:id="@+id/txtRegAutFechaNacimiento"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -176,42 +160,8 @@
                 android:padding="5dp"
                 android:inputType="textPersonName"/>
 
-            <TextView
-                android:id="@+id/textView22"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Fecha Registro"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
-
-            <EditText
-                android:id="@+id/txtFecharegistro"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_margin="4dp"
-                android:padding="5dp"
-                android:inputType="textPersonName" />
-
-            <TextView
-                android:id="@+id/textView23"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Estado"
-                android:padding="4dp"
-                android:layout_margin="4dp"/>
-
-            <EditText
-                android:id="@+id/txtEstado"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:layout_margin="4dp"
-                android:padding="5dp"
-                android:inputType="textPersonName" />
-
             <Button
-                android:id="@+id/btnRegistro"
+                android:id="@+id/btnRegAutRegistro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="9dp"
