@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class ConnectionRest {
 
-    private static Retrofit retrofit ;
+    private static Retrofit retrofit = null;
 
     private static final String URL = "https://api-cibertec-moviles.herokuapp.com/servicio/";
 
