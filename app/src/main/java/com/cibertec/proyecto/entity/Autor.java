@@ -13,6 +13,11 @@ public class Autor {
     private String fechaRegistro;
     private int estado;
 
+
+
+
+
+
     public int getIdAutor() {
         return idAutor;
     }
@@ -92,4 +97,6 @@ public class Autor {
     public void setEstado(int estado) {
         this.estado = estado;
     }
+
+
 }

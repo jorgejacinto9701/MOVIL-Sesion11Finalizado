@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".vista.consulta.AutorConsultaActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:padding="10dp">
 
     <TextView
         android:layout_width="match_parent"
@@ -17,6 +18,40 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Nombre"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
+    <EditText
+        android:id="@+id/txtRegEdiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:minHeight="48dp"
+        android:padding="5dp"
+        android:ems="10"/>
+
+
+    <Button
+        android:id="@+id/btnRegEdiEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Filtrar"
+        />
+
+    <ListView
+        android:id="@+id/lstConsultaAutor"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"/>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
