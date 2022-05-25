@@ -17,6 +17,40 @@
         android:textSize="18sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Nombre"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/txtRevisaNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp" />
+
+
+    <Button
+        android:id="@+id/btnFiltrarRevista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:text="Filtrar" />
+
+
+    <ListView
+        android:id="@+id/lstConsultaRevista"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        />
+
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
