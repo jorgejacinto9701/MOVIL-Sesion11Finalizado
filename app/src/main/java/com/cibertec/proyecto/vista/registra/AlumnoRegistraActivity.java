@@ -46,7 +46,7 @@ public class AlumnoRegistraActivity extends NewAppCompatActivity {
 
                 String nom=txtNombres.getText().toString();
                 String ape=txtApellidos.getText().toString();
-                int dni=Integer.parseInt(txtDni.getText().toString());
+                String dni=txtDni.getText().toString();
                 String dir=txtDireccion.getText().toString();
                 String corr=txtCorreo.getText().toString();
                 String FecNac=txtFechaNacimiento.getText().toString();
