@@ -2,6 +2,7 @@ package com.cibertec.proyecto.vista.consulta;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -45,6 +46,24 @@ public class SalaConsultaActivity extends NewAppCompatActivity {
         lstSala = findViewById(R.id.lstConsultaSala);
         adaptador = new SalaAdapter(this, R.layout.activity_sala_crud_item, data);
         lstSala.setAdapter(adaptador);
+
+        lstSala.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                Sala objSala = data.get(i);
+
+                String msg = "Datos de SALA \n\n";
+                msg += "Id : " + objSala.getIdSala() + "\n";
+                msg += "Numero : " + objSala.getNumero() + "\n";
+                msg += "Piso : " + objSala.getPiso() + "\n";
+                msg += "Capacidad : " + objSala.getCapacidad() + "\n";
+                msg += "Recursos : " + objSala.getRecursos() + "\n";
+                msg += "Fecha Separacion : " + objSala.getFechaSeparacion() + "\n";
+                msg += "Fecha de Registro : " + objSala.getFechaRegistro() + "\n";
+                msg += "Estado : " + (objSala.getEstado()==1?"Activo":"Inactivo");
+                mensajeAlert(msg);
+            }
+        });
 
         api = ConnectionRest.getConnection().create(ServiceSala.class);
 
