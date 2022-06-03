@@ -37,7 +37,7 @@
                 android:textAlignment="center" />
 
             <EditText
-                android:id="@+id/txtRegEdiNombre"
+                android:id="@+id/txtRegistraEdiNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -51,7 +51,7 @@
                 android:text="Dirección" />
 
             <EditText
-                android:id="@+id/txtRegEdiDirecccion"
+                android:id="@+id/txtRegistraEdiDirecccion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -65,7 +65,7 @@
                 android:text="País" />
 
             <Spinner
-                android:id="@+id/spnRegEdiPais"
+                android:id="@+id/spnRegistraEdiPais"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -82,14 +82,14 @@
                 android:text="Fecha Creación" />
 
             <EditText
-                android:id="@+id/txtRegEdiFechaCreacion"
+                android:id="@+id/txtRegistraEdiFechaCreacion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
                 android:padding="5dp" />
 
             <Button
-                android:id="@+id/btnRegEdiEnviar"
+                android:id="@+id/btnRegistraEdiEnviar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"

@@ -33,11 +33,11 @@ public class EditorialRegistraActivity extends NewAppCompatActivity {
 
         rest = ConnectionRest.getConnection().create(ServiceEditorial.class);
 
-        txtNombre = findViewById(R.id.txtRegEdiNombre);
-        txtDireccion = findViewById(R.id.txtRegEdiDirecccion);
-        spnPais = findViewById(R.id.spnRegEdiPais);
-        txtFecha = findViewById(R.id.txtRegEdiFechaCreacion);
-        btnRegistrar = findViewById(R.id.btnRegEdiEnviar);
+        txtNombre = findViewById(R.id.txtRegistraEdiNombre);
+        txtDireccion = findViewById(R.id.txtRegistraEdiDirecccion);
+        spnPais = findViewById(R.id.spnRegistraEdiPais);
+        txtFecha = findViewById(R.id.txtRegistraEdiFechaCreacion);
+        btnRegistrar = findViewById(R.id.btnRegistraEdiEnviar);
         btnRegistrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
