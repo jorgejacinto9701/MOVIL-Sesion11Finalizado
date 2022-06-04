@@ -17,6 +17,7 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/txtCrudRegistraEditTitulo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
@@ -86,6 +87,24 @@
                 android:layout_margin="5dp"
                 android:padding="5dp" />
 
+            <TextView
+                android:id="@+id/txtCrudRegistraEdiTextoEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="Estado" />
+
+            <Spinner
+                android:id="@+id/spnCrudRegistraEdiEstado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:minHeight="48dp"
+                android:entries="@array/txtEstado"
+                />
+
             <Button
                 android:id="@+id/btnCrudRegistraEdiEnviar"
                 android:layout_width="match_parent"
@@ -93,6 +112,14 @@
                 android:layout_margin="5dp"
                 android:padding="5dp"
                 android:text="Registrar" />
+
+            <Button
+                android:id="@+id/btnCrudRegistraEdiEliminar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="5dp"
+                android:text="Eliminar" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 

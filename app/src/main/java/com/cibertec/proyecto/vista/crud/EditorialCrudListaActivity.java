@@ -1,7 +1,9 @@
 package com.cibertec.proyecto.vista.crud;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -42,6 +44,7 @@ public class EditorialCrudListaActivity extends NewAppCompatActivity {
 
         txtNombre = findViewById(R.id.txtCrudEdiNombre);
         btnFiltrar = findViewById(R.id.btnCrudEdiFiltrar);
+        btnRegistra = findViewById(R.id.btnCrudEdiRegistrar);
 
         //construir el listview y adaptador
         lstEditorial = findViewById(R.id.lstCrudEditorial);
@@ -57,6 +60,37 @@ public class EditorialCrudListaActivity extends NewAppCompatActivity {
                 consulta(filtro);
             }
         });
+
+        btnRegistra.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                  //mensajeAlert("En Registrar ");
+
+                //Se muestre el formulario EditorialCrudFormularioActivity en MODO Registrar
+                Intent intent = new Intent(EditorialCrudListaActivity.this,EditorialCrudFormularioActivity.class);
+                intent.putExtra("var_tipo", "REGISTRAR");
+                startActivity(intent);
+
+
+            }
+        });
+
+        lstEditorial.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                //mensajeAlert("En Actualizar  " + i);
+
+                //Se obtiene los datos de la editorial seleccionada
+                Editorial obj = data.get(i);
+
+                //Se muestre el formulario EditorialCrudFormularioActivity en MODO Registrar
+                Intent intent = new Intent(EditorialCrudListaActivity.this,EditorialCrudFormularioActivity.class);
+                intent.putExtra("var_tipo", "ACTUALIZAR");
+                intent.putExtra("var_item", obj);
+                startActivity(intent);
+            }
+        });
+
     }
 
 
@@ -67,7 +101,7 @@ public class EditorialCrudListaActivity extends NewAppCompatActivity {
             public void onResponse(Call<List<Editorial>> call, Response<List<Editorial>> response) {
                 if (response.isSuccessful()){
                     List<Editorial> lstEditorial = response.body();
-                    mensajeAlert("Llegaron " + lstEditorial.size() + " elementos ") ;
+                    mensajeToastLong("Llegaron " + lstEditorial.size() + " elementos ") ;
                     data.clear();
                     data.addAll(lstEditorial);
                     adaptador.notifyDataSetChanged();

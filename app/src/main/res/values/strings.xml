@@ -74,4 +74,11 @@
         <item> Avanzado </item>
     </string-array>
 
+
+    <string-array name="txtEstado">
+        <item>[Seleccione]</item>
+        <item>Activo</item>
+        <item>Inactivo</item>
+    </string-array>
+
 </resources>
